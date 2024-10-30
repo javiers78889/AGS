@@ -4,27 +4,29 @@ const tiers = [
 
 
   {
-    name: 'Hobby',
+    name: 'Carga Aerea Miami-Panama',
     id: 'tier-hobby',
     href: '#',
-    priceMonthly: '$29',
-    description: "The perfect plan if you're just getting started with our product.",
-    features: ['25 products', 'Up to 10,000 subscribers', 'Advanced analytics', '24-hour support response time'],
+    plan: 'lb',
+    priceMonthly: '$2.50',
+    description: "El plan perfecto si deseas comprar en pequenas cantidades.",
+    features: ['Sin impuesto aduanal', 'Entrega rapida', 'Cuidamos tu paquete', 'Compra de cualquier tienda'],
     featured: false,
   },
   {
-    name: 'Enterprise',
+    name: 'Carga Maritima',
     id: 'tier-enterprise',
     href: '#',
-    priceMonthly: '$99',
-    description: 'Dedicated support and infrastructure for your company.',
+    plan: 'metro cubico',
+    priceMonthly: '$6.50',
+    description: 'Dedicado a emprendedores y empresas que desean suministrar sus tiendas.',
     features: [
-      'Unlimited products',
-      'Unlimited subscribers',
-      'Advanced analytics',
-      'Dedicated support representative',
-      'Marketing automations',
-      'Custom integrations',
+      'Sin impuesto aduanal',
+      'Cuidamos tu carga',
+      'Trae lo que quieras',
+      'Tarifa ajustable al cliente',
+      'Rapido transporte',
+      'Compra de cualquier tienda',
     ],
     featured: true,
   },
@@ -85,7 +87,7 @@ export const Planes = () => {
                             >
                                 {tier.priceMonthly}
                             </span>
-                            <span className={classNames(tier.featured ? 'text-gray-400' : 'text-gray-500', 'text-base')}>/month</span>
+                            <span className={classNames(tier.featured ? 'text-gray-400' : 'text-gray-500', 'text-base')}>/{tier.plan}</span>
                         </p>
                         <p className={classNames(tier.featured ? 'text-gray-300' : 'text-gray-600', 'mt-6 text-base/7')}>
                             {tier.description}
@@ -117,7 +119,7 @@ export const Planes = () => {
                                 'mt-8 block rounded-md px-3.5 py-2.5 text-center text-sm font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 sm:mt-10',
                             )}
                         >
-                            Get started today
+                            Lo quiero
                         </a>
                     </div>
                 ))}
