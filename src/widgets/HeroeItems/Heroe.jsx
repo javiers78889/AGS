@@ -36,7 +36,7 @@ export const Heroe = () => {
               <img
                 alt=""
                 src={ags}
-                className="h-24 w-auto "
+                className="h-10 w-auto lg:h-24"
               />
             </a>
           </div>
