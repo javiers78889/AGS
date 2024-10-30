@@ -1,6 +1,6 @@
-import im from '../img/oficial.png'; // Importa la imagen
-import im2 from '../img/photo.png'; // Importa la imagen
-import im3 from '../img/barco.png'; // Importa la imagen
+import im from '../../img/oficial.png'; // Importa la imagen
+import im2 from '../../img/photo.png'; // Importa la imagen
+import im3 from '../../img/barco.png'; // Importa la imagen
 import { useState } from 'react';
 
 export const Slider = () => {
@@ -22,7 +22,9 @@ export const Slider = () => {
                 {images.map((image, index) => (
                     <div
                         key={index}
-                        className={`duration-700 ease-in-out ${index === currentIndex ? '' : 'hidden'}`}
+                        className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                            index === currentIndex ? 'opacity-100' : 'opacity-0'
+                        }`}
                         data-carousel-item
                     >
                         <img

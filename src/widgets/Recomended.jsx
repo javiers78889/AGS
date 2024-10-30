@@ -2,7 +2,7 @@
 
 export const Recomended = () => {
     return (
-        <div className="bg-gray-500 py-24 sm:py-32">
+        <div className="bg-gradient-to-b from-gray-500 to-yellow-500 py-24 sm:py-32">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <h2 className="text-center text-lg/9 font-semibold text-gray-900">
                     Paginas Recomendadas

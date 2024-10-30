@@ -1,9 +1,12 @@
 
 import { Footer } from './components/Footer'
-import { Heroe } from './components/Heroe'
-import { Slider } from './components/Slider'
+import { Heroe } from './widgets/HeroeItems/Heroe'
+import { Slider } from './widgets/Slider/Slider'
+import { ConteoPersonas } from './widgets/ConteoPersonas'
+import { Planes } from './widgets/Planes'
 import { Recomended } from './widgets/Recomended'
 import { Servicios } from './widgets/Servicios'
+
 
 function App() {
 
@@ -12,6 +15,8 @@ function App() {
      <Heroe/>
      <Slider/>
      <Servicios/>
+     <Planes/>
+     <ConteoPersonas/>
      <Recomended/>
      <Footer/>
     </>
